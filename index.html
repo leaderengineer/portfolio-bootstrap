@@ -6,11 +6,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Bootstrap</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <style>
+        .header-section-title {
+            font-size: 80px !important;
+        }
+
+        .social-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+
+        .circle {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+        }
+    </style>
 </head>
 
-<body>
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+<body class="bg-black">
+    <nav>
+        <div class="container d-flex align-items-center py-4 justify-content-between">
+            <h1 class="navbar-brand text-white fs-4 text-uppercase fw-bold">robert garcia</h1>
+            <ul class="d-flex my-0 gap-3 list-unstyled">
+                <li><a class="text-decoration-none text-white" href="#">Work</a></li>
+                <li><a class="text-decoration-none text-white" href="#">About</a></li>
+                <li><a class="text-decoration-none text-white" href="#">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <header>
+        <div class="container">
+            <div
+                class="row d-flex align-items-center flex-lg-row gap-lg-0 my-lg-0 flex-sm-column-reverse gap-sm-5 my-sm-5">
+                <div class="col col-lg-6 col-sm-12 col-md-6">
+                    <h1 class="header-section-title text-uppercase text-white">hi, i am <br> robert garcia.</h1>
+                    <p class="lead text-secondary fw-normal">A Sydney based front-end developer passionate about
+                        building
+                        accessible
+                        and user
+                        friendly
+                        websites.</p>
+                    <div class="d-flex align-items-center gap-3 mt-5">
+                        <button
+                            class="d-flex align-items-center btn btn-warning fw-normal rounded-5 px-lg-2 px-sm-4 fs-5 py-2">
+                            <span class="px-lg-2">Contact Me</span>
+                            <div class="circle bg-dark mx-3"></div>
+                        </button>
+                        <i
+                            class="d-flex align-items-center justify-content-center text-primary bg-dark social-icon fa-brands fa-linkedin-in"></i>
+                        <i
+                            class="d-flex align-items-center bg-dark text-white justify-content-center fa-brands social-icon fa-github"></i>
+                    </div>
+                </div>
+                <div class="col col-lg-5 col-sm-12 col-md-6">
+                    <img width="600" height="683" class="img-fluid" src="./images/header-section-image.png"
+                        alt="This is Robert Garcia image">
+                </div>
+            </div>
+        </div>
+    </header>
 </body>
 
 </html>
